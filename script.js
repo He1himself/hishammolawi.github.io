@@ -1,5 +1,8 @@
-document.getElementById("year").textContent = new Date().getFullYear();
+// اكتب السنة لو العنصر موجود
+const y = document.getElementById("year");
+if (y) y.textContent = new Date().getFullYear();
 
+// بيانات المشاريع
 const projects = [
   {
     title: "StrokeSense — AI Stroke Detection",
@@ -15,12 +18,15 @@ const projects = [
   }
 ];
 
+// ارسم البطاقات
 const wrap = document.getElementById("projects");
-wrap.innerHTML = projects.map(p => `
-  <article class="card">
-    <h3>${p.title}</h3>
-    <p>${p.summary}</p>
-    <p>${p.tech.map(t=>`<span style="opacity:.8">${t}</span>`).join(" · ")}</p>
-    <a class="btn" href="${p.github}" target="_blank" rel="noopener">View on GitHub</a>
-  </article>
-`).join("");
+if (wrap) {
+  wrap.innerHTML = projects.map(p => `
+    <article class="card">
+      <h3>${p.title}</h3>
+      <p>${p.summary}</p>
+      <p>${p.tech.map(t=>`<span style="opacity:.8">${t}</span>`).join(" · ")}</p>
+      <a class="btn" href="${p.github}" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+  `).join("");
+}
