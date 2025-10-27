@@ -14,6 +14,7 @@ const projects = [
     github: "https://github.com/He1himself/Visitors-prediction-System"
   }
 ];
+
 const wrap = document.getElementById("projects");
 wrap.innerHTML = projects.map(p => `
   <article class="card">
@@ -23,5 +24,3 @@ wrap.innerHTML = projects.map(p => `
     <a class="btn" href="${p.github}" target="_blank" rel="noopener">View on GitHub</a>
   </article>
 `).join("");
-
-
