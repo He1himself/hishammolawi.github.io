@@ -7,10 +7,11 @@ p{margin:0 0 10px;color:#a7b3c7}
 .btn{display:inline-block;padding:10px 12px;border:1px solid #1f2a44;border-radius:10px;color:#e6edf7;text-decoration:none}
 footer{padding:20px;color:#a7b3c7;text-align:center}
 .project-img {
-   width: 120px; /* حجم صغير */
-    height: 120px; /* نخليها مربعة */
-    object-fit: cover; /* عشان ما تتشوه */
-    border-radius: 8px;
-    margin-bottom: 10px;
+   width: 120px;      /* عرض مناسب */
+    height: 120px;     /* طول مناسب */
+    object-fit: cover; /* قص بدون تشويه */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px auto;
 }
 
