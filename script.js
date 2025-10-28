@@ -9,14 +9,14 @@ const projects = [
     summary: "Detects ischemic & hemorrhagic strokes from CT/MRI (DWI, GRE, SWI).",
     tech: ["Python","TensorFlow","OpenCV"],
     github: "https://github.com/He1himself/stroke-sense-project",
-    image: "images/strokesense.png"
+    image: "images/strokeCover.png"
   },
   {
     title: "Visitors Prediction System",
     summary: "Predicts number of visitors using ML models for better resource allocation.",
     tech: ["Python","Scikit-learn","Flask"],
     github: "https://github.com/He1himself/Visitors-prediction-System",
-    image: "images/strokesense.png"
+    image: "images/VisitorPredict.png"
   }
 ];
 
