@@ -30,14 +30,5 @@ if (wrap) {
     </article>
   `).join("");
 }
-  const copyBtn = document.getElementById("copy-btn");
-if(copyBtn){
-  copyBtn.addEventListener("click", () => {
-    navigator.clipboard.writeText("hishammolawi@gmail.com").then(() => {
-      copyBtn.textContent = "Copied!";
-      setTimeout(() => copyBtn.textContent = "Copy", 1500);
-    });
-  });
-}
-
+ 
 
