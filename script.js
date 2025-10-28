@@ -8,13 +8,15 @@ const projects = [
     title: "StrokeSense — AI Stroke Detection",
     summary: "Detects ischemic & hemorrhagic strokes from CT/MRI (DWI, GRE, SWI).",
     tech: ["Python","TensorFlow","OpenCV"],
-    github: "https://github.com/He1himself/stroke-sense-project"
+    github: "https://github.com/He1himself/stroke-sense-project",
+    image: "images/strokesense.png"
   },
   {
     title: "Visitors Prediction System",
     summary: "Predicts number of visitors using ML models for better resource allocation.",
     tech: ["Python","Scikit-learn","Flask"],
-    github: "https://github.com/He1himself/Visitors-prediction-System"
+    github: "https://github.com/He1himself/Visitors-prediction-System",
+    image: "images/strokesense.png"
   }
 ];
 
@@ -23,6 +25,7 @@ const wrap = document.getElementById("projects");
 if (wrap) {
   wrap.innerHTML = projects.map(p => `
     <article class="card">
+      <img src="${p.image}" alt="${p.title}" class="project-img"/>
       <h3>${p.title}</h3>
       <p>${p.summary}</p>
       <p>${p.tech.map(t=>`<span style="opacity:.8">${t}</span>`).join(" · ")}</p>
