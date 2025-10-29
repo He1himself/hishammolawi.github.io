@@ -31,14 +31,14 @@ const projects = [
 const wrap = document.getElementById("projects");
 if (wrap) {
   wrap.innerHTML = projects.map(p => `
-    <article class="card">
-      <img src="${p.image}" alt="${p.title}" class="project-img"/>
-      <h3>${p.title}</h3>
-      <p>${p.summary}</p>
-      <p>${p.tech.map(t=>`<span style="opacity:.8">${t}</span>`).join(" · ")}</p>
-      <a class="btn" href="${p.github}" target="_blank" rel="noopener">View on GitHub</a>
-    </article>
-  `).join("");
+  <article class="card">
+    <img src="${p.image}" alt="${p.title}" class="project-img" />
+    <h3>${p.title}</h3>
+    <p>${p.summary}</p>
+    <p>${p.tech.map(t=>`<span style="opacity:.8">${t}</span>`).join(" • ")}</p>
+    <a class="btn" href="${p.github}" target="_blank" rel="noopener">View on GitHub</a>
+  </article>
+`).join("");
 }
  
 
