@@ -17,6 +17,13 @@ const projects = [
     tech: ["Python","Scikit-learn","Flask"],
     github: "https://github.com/He1himself/Visitors-prediction-System",
     image: "images/VisitorPredict.png"
+  },
+  {
+    title: "Plant Leaf Disease Detection System",
+    summary: "AI & Computer Vision Project system of detecting and classifying diseases in plant leaves.",
+    tech: ["Python","Scikit-learn","Keras"],
+    github: "https://github.com/He1himself/Plant-Leaf-Disease-Detection-System",
+    image: "leafprog"
   }
 ];
 
