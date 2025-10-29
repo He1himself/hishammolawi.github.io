@@ -23,7 +23,7 @@ const projects = [
     summary: "AI & Computer Vision Project system of detecting and classifying diseases in plant leaves.",
     tech: ["Python","Scikit-learn","Keras"],
     github: "https://github.com/He1himself/Plant-Leaf-Disease-Detection-System",
-    image: "leafprog"
+    image: "images/leafprog.png"
   }
 ];
 
